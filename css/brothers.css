@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+}
+
+body{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(#800020,black);
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    justify-content: space-between;
+    padding-top: 15rem;
+    transform: translateX(-1.5rem);
+}
+
+.card{
+    /* height: 290px; */
+    width: 550px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    background: white;
+    border-radius: 1rem;
+}
+
+.card img{
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .top-text .name{
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+
+header{
+    height: 100vh;
+    background-size: cover;
+    background-position: cover;
+    font-family: 'Courgette', cursive;
+}
+
+ul{
+    font-size: 2.8vw;
+    list-style-type: none;
+    margin-top: 0%;
+    text-align: center;
+}
+
+ul li{
+    text-size-adjust: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fffdd0;
+    padding: 5%;
+    border: 5px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background-color: #fffdd0;
+    color: crimson;
+}
+
+.main{
+    max-width: 1500px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 18%;
+    left: 45%;
+    transform: translate(-35%, -50%);
+    text-align: center;
+}
+
+.title h1{
+    color: crimson;
+    font-size: 4.8vw;
+}
+
+@media (max-width: 600px){
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10rem;
+        transform: translateX(5px);
+        padding-bottom: 10%;
+    }
+    .card{
+        max-width: 250px;
+    }
+
+    .title{
+        position: absolute;
+        top: 18%;
+        left: 45%;
+        transform: translate(-10%, -50%);
+        text-align: center;
+    }
+
+    ul{
+        font-size: 2.8vw;
+        list-style-type: none;
+        margin-top: 50px;
+        text-align: center;
+        transform: translate(2%);
+    }
+}
