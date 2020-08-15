@@ -152,6 +152,19 @@ ul li a:hover{
     max-width: 1500px;
     margin: auto;
 }
+@media screen and (min-width: 700px){
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        margin: 2rem;
+    }
+
+}
 
 @media (max-width: 600px){
     .heading{
@@ -176,16 +189,5 @@ ul li a:hover{
         left: 50%;
         transform: translateX(-50%);
         border-radius: 2rem;
-    }
-
-    .card-wrapper{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card{
-        margin: 2rem;
     }
 }
